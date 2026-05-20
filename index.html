@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 520 | 致我最愛的妳</title>
+    <style>
+        /* 全域樣式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #faf6f6;
+            color: #4a4a4a;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* 滿版第一屏 */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ffe3e3 0%, #fff0f0 100%);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #d9534f;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #777;
+            margin-bottom: 50px;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        /* 下拉提示箭頭 */
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+            cursor: pointer;
+            text-decoration: none;
+            color: #d9534f;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* 內容區塊 */
+        .content-section {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        /* 照片外框 */
+        .photo-container {
+            width: 100%;
+            background: #fff;
+            padding: 15px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 50px;
+            transform: rotate(-1deg);
+            transition: transform 0.3s ease;
+        }
+
+        .photo-container:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 2px;
+        }
+
+        .photo-caption {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #888;
+            font-style: italic;
+        }
+
+        /* 感謝信件區塊 */
+        .letter {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            line-height: 1.8;
+            letter-spacing: 1px;
+            text-align: justify;
+            border-left: 5px solid #ffb3b3;
+        }
+
+        .letter p {
+            margin-bottom: 20px;
+        }
+
+        .signature {
+            text-align: right;
+            margin-top: 40px;
+            font-weight: bold;
+            color: #d9534f;
+        }
+
+        /* 頁尾 */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.8rem;
+            color: #bbb;
+            background-color: #fff;
+        }
+
+        /* 動態效果 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translate(-50%, 0); }
+            40% { transform: translate(-50%, -10px); }
+            60% { transform: translate(-50%, -5px); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 第一屏：封面 -->
+    <section class="hero">
+        <h1>Happy 520, My Love ❤️</h1>
+        <p>謝謝妳一直以來的陪伴。這是一個只屬於妳的秘密網頁，請往下滑...</p>
+        <a href="#content" class="scroll-down">往下滑動拆禮物 ▽</a>
+    </section>
+
+    <!-- 第二屏：內容區 -->
+    <div id="content" class="content-section">
+        
+        <!-- 照片區域 -->
+        <div class="photo-container">
+            <!-- 💡 請把下面的 'your-photo.jpg' 替換成妳們的合照檔名，或是網路圖片連結 -->
+            <img src="your-photo.JPG" alt="我們的美好瞬間">
+            <div class="photo-caption">—— 紀錄我們最美好的那一刻 ✨</div>
+        </div>
+
+        <!-- 感謝卡片區域 -->
+        <div class="letter">
+            <p>親愛的：</p>
+            <p>今天是 520，在這個特別的日子裡，想用這個簡單的網頁，給妳一點不一樣的小驚喜。</p>
+            <p>不論是我們一起去旅行的冒險、日常裡平凡的打鬧，還是妳貼心的陪伴，對我來說都是最珍貴的影像。謝謝妳總是懂我的奇思妙想，也謝謝妳帶給我的所有溫暖與力量。</p>
+            <p>未來的日子，我們還要一起去更多地方，拍下更多屬於我們的精彩片段！</p>
+            <p>520 快樂，今天也要開開心心的！</p>
+            <div class="signature">愛妳的 子安 ✍️</div>
+        </div>
+
+    </div>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>© 2026 Crafted with ❤️ for You</p>
+    </footer>
+
+</body>
+</html>
